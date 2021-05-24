@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <title>Pagina principal</title>
+    <link type="text/css" rel="stylesheet" href="estilo.css">
+  </head>
+  <body>
+    <!--Barra de navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="home.html"><img src="imagenes/icone1.svg" width="50" height="50" class="d-inline-block align-top" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+          <li class="nav-item">
+              <a class="nav-link" href="deportes.html">Deportes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ligaEspañol.html">Liga España</a>
+        </li>
+          <li class="nav-item">
+              <a class="nav-link" href="login.html">Acceso</a>
+          </li>
+          <li class="nav-item">
+             <a class="nav-link" href="registrar.html" >Registrar</a>
+
+          </li>
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="ingresa tu búsqueda" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+      </div>
+  </nav>
+
+  <div id="contenido">
+    <h1>MaximoDeporte</h1>
+    <p   id="parafo">La importancia del deporte en las sociedades
+        modernas ha sido motivo de estudio en muchas ocasiones
+        por considerarse un factor relevante y de fuerte influencia 
+        en las costumbres y rutinas de la ciudadanía. 
+        El objetivo de esta página es ofrecer un sitio accesible a los periodistas 
+        y los ciudadanos en general, donde deben ser capaces de recibir
+        informaciones independientemente de su discapacidad.. 
+        Generalmente los contenidos compartido en nuestro sitio gestionado por
+          el gabinete son Noticias, imágenes, encuentros virtuales, juegos, 
+          notas de prensa, agenda…La publicación de estadísticas y 
+          otra serie de herramientas que permitan conocer el estado de opinión de su entidad en la Red.</p>
+  </div>
+  <!--Carrusel-->
+ <div id="contenido">
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imagenes/slide_a.jpg" class="d-block w-100" alt="Ligue 1">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Pronósticos Ligue 1</h5>
+          <p id="caru">¿Quién ganará la liga francesa?</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="imagenes/slide_b.jpeg" class="d-block w-100" alt="Copa America 2021">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Mejores equipos de la Copa América 2021</h5>
+          <p id="caru">Argentina y Brasil son los máximos favoritos de la Copa de América</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="imagenes/slide_c.jpeg" class="d-block w-100" alt="EuroLiga">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Pronósticos Euroliga:consejos y predicciones</h5>
+          <p id="caru">No te pierdas los pronósticos de la Euroliga 2021 en MaximoDeporte</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+ </div>
+ <br></br>
+                         
+ <!--resumen de los contenidos// usando grid card-->
+ <div id="contenido"> 
+  <div class="row row-cols-1 row-cols-md-3">
+    <div class="col mb-4">
+      <div class="card">
+        <img src="imagenes/card_a.jpeg" class="card-img-top" alt="Neyimar y Mbappe">
+        <div class="card-body">
+          <h5 class="card-title">¿Quién ganará la liga francesa?</h5>
+          <p class="card-text">Los veinte mejores equipos del fútbol francés componen la Ligue 1, 
+            la primera división delfútbol galo.Históricamente ha sido una
+            competición muy igualada, como lo demuestra el hecho deque el equipo con más títulos de toda la historia sea el
+            Saint-Etienne, con 10, seguido porel Olympique de Marsella con 9 y tres equipos con 8: el
+            Paris Saint-Germain,el Mónaco yel Nantes. Sin embargo, en los últimos años la situación ha cambiado.
+          <br></br>
+          Desde que los petrodólares del jeque Nasser bin Ghanim Al-Khelaï le
+          convirtieran en el dueño del equipo en el año 2011, el PSG lo ha ganado 
+          todo, excepto el título de 2017, que se llevó el Mónaco. Ese dominio 
+          aplastante del equipo de la capital francesa parece extenderse también 
+          esta temporada, aunque hay equipos que están luchando por no permitirlo
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card">
+        <img src="imagenes/card_b.jpeg" class="card-img-top" alt="Messi copa America">
+        <div class="card-body">
+          <h5 class="card-title">Argentina y Brasil favoritos de la Copa America 2021</h5>
+          <p class="card-text">La Copa América celebra en 2021 su 47ª edición. Es el evento futbolístico más
+             importante de Sudamérica y reúne cada año a las selecciones de la Confederación Sudamericana de 
+             Fútbol (CONMEBOL) y a alguna selección invitada. Este año la Copa América se disputará en sede 
+             compartida entre Argentina y Colombia entre el 13 de junio y al 10 de julio.
+             <br></br>
+            Argentina y Brasil son los máximos favoritos en las apuestas de la Copa de América
+            al triunfo finnal, como sucede al comienzo de cada edición de la Copa América. Sin embargo,este año habrá que estar muy atento a la evolución de
+            Uruguay o Colombia, equipos muy compactos y difíciles de ganar que pueden vender muy cara su derrota y plantar cara a los principales candidatos al título.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card">
+        <img src="imagenes/card_c.jpeg" class="card-img-top" alt="Basketball Euroliga">
+        <div class="card-body">
+          <h5 class="card-title">Calendario de la Final Four de la Euroliga 2021</h5>
+          <p class="card-text">Anadolu Efes, FC Barcelona y Milán. Uno de ellos será el 
+            vencedor de la Euroliga, pero antes, para llegar a la gran final han debido
+             de superar a duros rivales en los PlayOffs. Todos los conjuntos salvo el 
+             CSKA tuvieron que irse al quinto partido, lo que demuestra la igualdad a la 
+             hora de hacer cualquier pronóstico para la Euroliga.
+             El calendario de la Final Four queda así:</p>
+             <ul>
+               <li><p1>CSKA Moscu VS Anadolu Efes:</p1> viernes 28/05/2021- 18:00h – Semifinal B</li>
+               <li><p2>FC Barcelona VS AX Armani Milan: </p2> viernes 28/05/2021- 21:00h – Semifinal A</li>
+               <li><p3>Partido tercer puesto:</p3> domingo 30/05/2021 – 17:30h</li>
+               <li><p4>Final:</p4> domingo 30/05/2021 – 20:30h</li>
+             </ul>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+ </div>
+
+
+
+<!--Pie de pagina-->
+  <div class="row">
+    <div class="col bg-dark text-white">
+    <p class="text-center text-uppercase my-2">info@maximodeporte.cl</p>
+    <p class="text-center">Aviso legal | Terminos y Condiciones | Privacidad | Cookies</p>
+    <p class="text-center"> <small>Copyright © 2021 maximodeporte. Todos los derechos reservados.rel="nofollow"</small> </p>
+    </div>
+</div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

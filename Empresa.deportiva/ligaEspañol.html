@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="estilo.css">
+    <title>Ligas Española</title>
+  </head>
+  <body>
+    <!--Barra de navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="home.html"><img src="imagenes/icone1.svg" width="50" height="50" class="d-inline-block align-top" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="home.html">Home</a>
+            <li class="nav-item">
+                <a class="nav-link" href="deportes.html">Deportes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ligaEspañol.html">Liga España</a>
+          </li>
+            <li class="nav-item">
+                <a class="nav-link" href="login.html">Acceso</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="registrar.html" >Registrar</a>
+  
+            </li>
+  
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="ingresa tu búsqueda" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+          </form>
+        </div>
+    </nav>
+
+
+    <!--TEXTO sobre las ligas de España-->
+
+    <div class="container my-3">
+        <h1 class="text-center text-uppercase">Las Ligas de España</h1>
+       <div>
+          
+          <b></b>
+          <div >
+            <p><img src="imagenes/LaLiga_Santander_(2).svg" alt="ligaEspañol" width="200px"></p>
+        <p id="parafo" class =tex-center>A día de hoy, en España solamente hay tres competiciones consideradas
+             profesionales: LaLiga Santander y LaLiga Smartbank de fútbol (gestionadas por LaLiga) y la Liga 
+             Endesa de baloncesto (gestionada por la ACB). La Primera División de España conocida como LaLiga 
+             Santander por motivos de patrocinio, y oficialmente como Campeonato Nacional de Liga de Primera
+              División es la máxima categoría masculina del sistema de ligas de España y la principal competición
+               a nivel de clubes del país. La organiza desde 1984 la Liga Nacional de Fútbol Profesional tras suceder 
+               a la Real Federación Española de Fútbol (RFEF). Se disputa desde la temporada 1928-29 y se vio
+                interrumpida en dos ocasiones: entre 1936 y 1939, debido a la Guerra Civil Española, y en 2020, 
+                debido a la Pandemia de COVID-19.
+        </p>
+      </div>
+      <br></br>
+
+
+      <!--construyendo tabla para traer datos de la API-->
+    <div  class="container">
+        <div class="row">
+            <h3>Lista de las Ligas Española</h3>
+        </div>
+        
+        <div class="row">
+            <table class="table" id="categorias">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Deportes</th>
+                        <th scope="col">Suplente de liga</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="row">
+            <button type="button" class="btn btn-primary" id="enviar">Ver datos</button>
+        </div>
+    </div>
+
+
+    
+    
+    
+   
+    
+  
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    
+
+    <script>
+        //usando jquery para traer datos de la API monstrandolos en la tabla
+        $("#enviar").click(function(){
+            $.get("https://www.thesportsdb.com/api/v1/json/1/all_leagues.php",
+                function(data){
+                    $.each(data.leagues, function(i, item){
+                        $("#categorias").append("<tr><td>" + item.idLeague+ "</td><td>" + item.strLeague + "</td><td>" + item.strSport + 
+                             "</td><td>" + item.strLeagueAlternate+ "</td></tr>");
+                    });
+                });
+        });
+        </script>
+  </body>
+</html>
